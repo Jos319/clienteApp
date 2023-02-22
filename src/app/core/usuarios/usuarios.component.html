@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="content m-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">E-mail</th>
+          <th scope="col">Rol</th>
+          <th scope="col">Opc</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario of usuarios">
+          <th scope="row">{{usuario.id}}</th>
+          <td>{{usuario.nombre}}</td>
+          <td>{{usuario.email}}</td>
+          <td>{{usuario.rol}}</td>
+          <td>
+            <button type="button" class="btn btn-warning btn-sm">Editar</button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="content m-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nit</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Teléfono</th>
+          <th scope="col">Dirección</th>
+          <th scope="col">Opc</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cliente of clientes">
+          <th scope="row">{{cliente.id}}</th>
+          <td>{{cliente.nit}}</td>
+          <td>{{cliente.nombre}}</td>
+          <td>{{cliente.apellido}}</td>
+          <td>{{cliente.telefono}}</td>
+          <td>{{cliente.direccion}}</td>
+          <td>
+            <button type="button" class="btn btn-warning btn-sm">Editar</button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
